@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna College Library</title>
+    <link rel="shortcut icon" href="./photo/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="./photo/nav.png" alt=""> Apni Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn-light btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-2">
+        <h1 class="display-4 text-center">
+          <div>
+            <img src="./photo/library.png" alt="">
+          </div>
+          <i class="text-primary"></i><b>Apni <span class="text-primary">Book </span>List</b></h1>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="title"><b>Title</b>
+              </label>
+              <input type="text" id="title" class="form-control mt-2">
+            </div>
+            <div class="form-group mt-3">
+              <label for="author"><b>Author</b></label>
+              <input type="text" id="author" class="form-control mt-2">
+            </div>
+            <div class="form-group mt-3">
+              <label for="bookid"><b>Book ID</b></label>
+              <input type="text" id="bookid" class="form-control mt-2">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block mt-3">
+          </form>
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Book ID</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+      </div>
+      <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
